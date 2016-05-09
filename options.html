@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Workflowy New Tab Options</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<style>
+			body {
+				padding:50px;
+				font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+				color:#777;
+				font-weight:300;
+			}
+
+			h1, h2, h3{
+				color:#222;
+				margin:0 0 20px;
+				line-height:1.1;
+			}
+
+			p, ul, ol, table, pre, dl {
+				margin:0 0 20px;
+			}
+
+			h1 {
+				font-size:28px;
+			}
+
+			a {
+				color:#39c;
+				font-weight:400;
+				text-decoration:none;
+			}
+
+			strong {
+				color:#222;
+				font-weight:700;
+			}
+
+			hr {
+				border:0;
+				background:#e5e5e5;
+				height:1px;
+				margin:0 0 20px;
+			}
+			
+			input {
+				display: block;
+				font-size: 12pt;
+				width: 250px;
+				margin-top: 12px;
+			}
+			
+			#status-text {
+				color: #2a2;
+				font-weight: bold;
+				margin-left: 20px;
+			}
+			
+			#header-logo {
+				margin-right: 12px;
+			}
+			
+			#footer {
+				margin-top: 32px;
+				font-style: italic;
+			}
+		</style>
+	</head>
+	<body>
+		<h1><img id="header-logo" src="icon_24.png"></img>Workflowy New Tab Options</h1>
+		<hr>
+		<div id="starting-list">
+			<h2>Starting List</h2>
+			<p>
+				Enter a Workflowy list ID (the part to the right of the "/#/" in the URL).  <strong>Leave blank for your root list.</strong>
+				<input type="text" name="list-id" id="list-id" placeholder="List ID (e.g. 5da6ag1732de)">
+			</p>
+		</div>
+		<div id="controls">
+			<hr>
+			<button id="save-button">Save</button>
+			<span id="status-text"></span>
+		</div>
+		<div id="footer">
+			The <a href="https://github.com/rmnoon/workflowy-newtab">source</a> for this extension is available on Github.
+		</div>
+	</body>
+	<script src="options.js"></script>
+</html>
