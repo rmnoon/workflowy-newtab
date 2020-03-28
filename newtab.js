@@ -4,5 +4,10 @@ window.onload = function() {
     if (listId) {
         url += '/#/' + listId;
     }
-    document.getElementById('wrapper').src = url;
+    chrome.tabs.getCurrent(function (tab) {
+        chrome.tabs.update(tab.id, {
+            url: url,
+            highlighted: true
+        });
+    });
 };
